@@ -1,3 +1,11 @@
+@font-face {
+  src: url(../Fonts/rocket.otf);
+  font-family: "Rocket";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  }
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +13,21 @@
 body {
   margin: 0;
   font-family: "Helvetica", "Arial", sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: rgb(212, 212, 212);
+}
+
+.header-logo {
+    width : 15%;
+    height : 15%;
+}
+
+.title{
+    font-family: "Rocket", serif;
+    font-size: 4em;
 }
 
 h1 {
@@ -26,6 +49,8 @@ ul {
   scrollbar-width: none;
 
 }
+
+
 li {
   list-style-type: none;
   background-color: #eeeeee;
