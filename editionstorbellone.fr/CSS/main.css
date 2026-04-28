@@ -17,6 +17,14 @@ ul {
   padding: 20px;
   display: flex;
   gap: 4vw;
+
+  &::-webkit-scrollbar {
+    display: none;
+    }
+
+-ms-overflow-style: none;
+  scrollbar-width: none;
+
 }
 li {
   list-style-type: none;
