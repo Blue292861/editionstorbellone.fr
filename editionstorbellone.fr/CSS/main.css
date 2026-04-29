@@ -1,5 +1,5 @@
 @font-face {
-  src: url(../Fonts/rocket.otf);
+  src: url(../Fonts/rocket.otf), format(truetype);
   font-family: "Rocket";
   font-weight: normal;
   font-style: normal;
@@ -18,19 +18,55 @@ body {
 header{
     display: flex;
     background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 40px;
 }
 
 .header-logo {
-    width : 15%;
-    height : 15%;
+    width : 80px;
+    height : auto;
 }
 
-.title{
-    font-family: "Rocket", serif;
-    font-size: 4em;
+title {
+    font-family: "Rocket", serif !important;
+    font-size: 3em;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
 }
 
-h1 {
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.book-spine {
+    display: block;
+    height: 6px;
+    background-color: #333;
+    border-radius: 2px 8px 8px 2px;
+    transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease;
+}
+
+.book-spine:nth-child(1) { width: 28px; }
+.book-spine:nth-child(2) { width: 35px; }
+.book-spine:nth-child(3) { width: 31px; }
+
+.menu-toggle:hover .book-spine {
+    background-color: #000;
+    transform: translateX(8px);
+}
+.menu-toggle:hover .book-spine:nth-child(1) { width: 35px; }
+.menu-toggle:hover .book-spine:nth-child(3) { width: 35px; }
+
+.carrousel-title {
   text-align: center;
   font-size: 1.7rem;
 }
