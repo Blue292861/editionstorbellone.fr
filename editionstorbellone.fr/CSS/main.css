@@ -1,9 +1,6 @@
 @font-face {
   src: url(../Fonts/rocket.otf), format(truetype);
   font-family: "Rocket";
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   }
 
 * {
@@ -171,4 +168,38 @@ li::scroll-marker {
 }
 li::scroll-marker:target-current {
   background-color: black;
+}
+
+
+.side-nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+.side-nav.active {
+    right: 0;
+}
+
+.side-nav a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
 }
