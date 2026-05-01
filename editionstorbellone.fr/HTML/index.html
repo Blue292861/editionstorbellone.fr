@@ -7,6 +7,8 @@
     <meta name="description" content="Retrouvez toute l'actualité et tous les liens pratiques des éditions Torbellonë.">
     <meta name="keywords" content="éditions, Torbellonë, Orydia, Oryshop, Maxime Laugé, Le Sang des Alfes, Trash, Le Retour de Retour, Fadorlyn, Les Déviants, livres, Science-Fiction, Fantaisie">
     <link rel="icon" type="image/x-icon" href="../Images/logo.png">
+
+    <script src="../JavaScript/main.js"></script>
         
     <link rel="stylesheet" href="../CSS/main.css">
 </head>
@@ -16,12 +18,21 @@
         <img src="../Images/logo.png" class="header-logo" />
         <h1 class="title">Éditions Torbellonë</h1>
 
-        <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
             <span class="book-spine"></span>
             <span class="book-spine"></span>
             <span class="book-spine"></span>
         </button>
+
     </header>
+
+    <nav id="side-menu" class="side-nav">
+            <a href="#" class="close-btn">&times;</a>
+            <a href="#">Accueil</a>
+            <a href="#">Éditions</a>
+            <a href="#">Contact</a>
+    </nav>
+
     <div class="carrousel-container">
     <h1 class="carrousel-title">Découvrez nos dernières nouveautés</h1>
 <ul>
